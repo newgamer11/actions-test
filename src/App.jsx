@@ -5,6 +5,11 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [number, setnumber] = useState(0)
+
+  const NumberCount = (event) => {
+    setnumber(number + 1);
+  }
 
   return (
     <>
@@ -28,6 +33,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div>
+        <button onClick={(event) => NumberCount}>click please</button>
+        <p>{number}</p>
+      </div>
     </>
   )
 }
