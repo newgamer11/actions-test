@@ -34,7 +34,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <div>
-        <button onClick={(event) => NumberCount}>click please</button>
+        <button onClick={NumberCount}>click please</button>
         <p>{number}</p>
       </div>
     </>
